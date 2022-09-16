@@ -21,14 +21,14 @@ defmodule PhoenixSlime.Mixfile do
 
   def deps do
     [
-      {:phoenix, "~> 1.4"},
-      {:phoenix_html, "~> 2.13 or ~> 3.0"},
-      {:jason, "~> 1.0", optional: true},
-      {:slime, "~> 1.0"},
-      {:ex_doc, ">= 0.0.0", only: :dev},
-      {:earmark, ">= 0.0.0", only: :dev},
-      {:credo, ">= 0.0.0", only: [:dev, :test]},
-      {:dialyxir, "~> 1.0", only: [:dev, :test], runtime: false}
+      {:phoenix, ">= 1.6.0"},
+      {:phoenix_html, ">= 3.2.0"},
+      {:jason, ">= 1.4.0", optional: true},
+      {:slime, ">= 1.3.0"},
+      {:ex_doc, ">= 0.28.5", only: :dev},
+      {:earmark, ">= 1.4.27", only: :dev},
+      {:credo, ">= 1.6.7", only: [:dev, :test]},
+      {:dialyxir, "~> 1.2.0", only: [:dev, :test], runtime: false}
     ]
   end
 
